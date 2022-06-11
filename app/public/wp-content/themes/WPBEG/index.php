@@ -1,19 +1,4 @@
-<?php get_header(); ?>
-	<body>
-		<header class="header">
-			<h1 class="header__ttl"><a href="./">WPBEG<span class="header__ttl__sub">static</span></a></h1>
-			<p class="header__descrition">Just another WordPress site</p>
-			<form class="p-search-form" id="searchform">
-				<input class="p-search-form__keyword" placeholder="キーワード">
-				<input class="p-search-form__submit" id="searchsubmit" type="submit" value="検索">
-			</form>
-			<div class="menu-gmenu-container">
-				<ul class="menu">
-					<li class="menu-item current_page_item"><a href="index.html">Blog</a></li>
-					<li class="menu-item"><a href="page.html">About</a></li>
-				</ul>
-			</div>
-		</header>
+		<?php get_header(); ?>
 		<div class="c-wrap">
 			<div class="c-grid">
 				<div class="p-contents">
