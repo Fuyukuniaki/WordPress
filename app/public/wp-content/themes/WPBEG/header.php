@@ -22,10 +22,5 @@
 			</h1>
 			<p class="header__description"><?php bloginfo( 'description' ); ?></p>
 			<?php get_search_form(); ?>
-			<div class="menu-gmenu-container">
-				<ul class="menu">
-					<li class="menu-item current_page_item"><a href="index.html">Blog</a></li>
-					<li class="menu-item"><a href="page.html">About</a></li>
-				</ul>
-			</div>
+			<?php wp_nav_menu(); ?>
 		</header>
