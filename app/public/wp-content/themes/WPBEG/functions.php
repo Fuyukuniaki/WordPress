@@ -10,8 +10,8 @@
         } elseif ( is_singular() ) { //シングルページなら
             $title = single_post_title( '', false );
         }
-            return $title;
-        }
+        return $title;
+    }
     add_filter( 'pre_get_document_title', 'wpbeg_title' );
 
     function wpbeg_script() {
