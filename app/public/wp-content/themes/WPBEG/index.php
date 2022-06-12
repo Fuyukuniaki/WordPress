@@ -24,10 +24,12 @@
 					endif;
 				?>
 				</div>
-				<ul class="p-pagenation">
-					<li class="prevpostslink"><a rel="next" href="#">Prev</a></li>
-					<li class="nextpostslink"><a rel="next" href="#">Next</a></li>
-				</ul>
+				<?php if ( $wp_query -> max_num_pages > 1 ) : //ページ数が1を超える場合に処理 ?>
+					<ul class="p-pagenation">
+						<li class="prevpostslink"><?php next_posts_link( 'Prev' ); ?></li>
+						<li class="prevpostslink"><?php previous_posts_link( 'Next' ); ?></li>
+					</ul>
+				<?php endif; ?>
 				<?php get_sidebar(); ?>
 			</div>
 		</div>
