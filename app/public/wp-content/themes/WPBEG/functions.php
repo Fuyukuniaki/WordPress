@@ -64,3 +64,4 @@
         add_editor_style( get_template_directory_uri() . "/css/editor-style.css" );
     }
     add_action( 'admin_init', 'wpbeg_theme_add_editor_styles' );
+    add_theme_support( 'automatic-feed-links' );
