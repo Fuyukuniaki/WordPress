@@ -31,12 +31,22 @@
 									<div class="post__author__name"><?php the_author_posts_link(); ?></div>
 									<p class="post__author__comment"><?php echo get_the_author_meta( 'description' ) ?></p>
 								</div>
-								<?php comments_template(); ?>	
-							</div>
+								<?php comments_template(); ?>
+								<?php if( get_previous_post() || get_next_post() ) : ?>
+							<ul class="p-pagenation">
+								<?php if ( get_previous_post() ) : ?>
+									<li class="prevpostslink"><?php previous_post_link( '%link', 'Prev' ); ?></li>
+								<?php endif; ?>
+								<?php if( get_next_post() ): ?>
+									<li class="prevpostslink"><?php next_post_link( '%link', 'Next' ); ?></li>
+								<?php endif; ?>
+							</ul>
+							<?php endif; ?>
 						<?php endwhile;
 						else :
 						?><p>表示する記事がありません</p><?php
 						endif; ?>
+					</div>
 				</div>				
 				<?php get_sidebar(); ?>
 			</div>
