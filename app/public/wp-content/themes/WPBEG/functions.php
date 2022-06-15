@@ -1,6 +1,6 @@
 <?php
     //テーマサポート
-    add_theme_support( 'menus' );
+    register_nav_menus();
     add_theme_support( 'title-tag' );
 
     //タイトル出力
