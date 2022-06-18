@@ -3,6 +3,7 @@
         <h2 id="comments" class="p-comment__ttl">Comment</h2>
         <ul class="p-comment__list">
             <?php wp_list_comments( 'avatar_size=60' ); ?>
+            <?php the_comments_navigation; ?>
         </ul>
     <?php endif; ?>
     <?php

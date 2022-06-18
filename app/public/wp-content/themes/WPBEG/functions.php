@@ -15,6 +15,7 @@
     add_filter( 'pre_get_document_title', 'wpbeg_title' );
 
     function wpbeg_script() {
+        wp_enqueue_script('comment-reply', 'wp-includes/js/comment-reply.js');
         wp_enqueue_style( 'mplus1p', '//fonts.googleapis.com/earlyaccess/mplus1p.css', array() );
         wp_enqueue_style( 'Sacramento', '//fonts.googleapis.com/css?family=Sacramento&amp;amp;subset=latin-ext', array() );
         wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
@@ -65,3 +66,27 @@
     }
     add_action( 'admin_init', 'wpbeg_theme_add_editor_styles' );
     add_theme_support( 'automatic-feed-links' );
+
+    $args = array(
+        'flex-width'    => true,
+        'width'         => 980,
+        'flex-width'    => true,
+        'height'        => 200,
+        'default-image' => get_template_directory_uri() . '/images/header.jpg',
+    );
+    add_theme_support( "custom-header", $args );
+    add_theme_support( "wp-block-styles" );
+    add_theme_support( "responsive-embeds" );
+
+    add_theme_support( "html5", array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+    add_theme_support( "custom-logo", array(
+        'height'               => 100,
+        'width'                => 400,
+        'flex-height'          => true,
+        'flex-width'           => true,
+        'header-text'          => array( 'site-title' ),
+        'unlink-homepage-logo' => true,
+      ) );
+    add_theme_support( "align-wide" );
+    add_theme_support( "custom-background", $args );
+    
