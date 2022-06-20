@@ -797,8 +797,9 @@ iframe {
   z-index: 100000;
   /* Above WP toolbar. */ }
 
-.p-search-form {
-  height: 33px;
+.p-search-form,
+.search-form {
+/*  height: 33px;*/
   margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -808,7 +809,8 @@ iframe {
           justify-content: center; }
 
 @media (min-width: 641px) {
-  .p-search-form {
+  .p-search-form,
+  .search-form {
     margin-top: 60px; } }
 
 .p-search-form__keyword, .search-field {
@@ -830,7 +832,6 @@ iframe {
 .search-submit {
   width: 48px;
   margin: 0;
-  padding: 0;
   font-size: 13px;
   font-size: 1.3rem;
   color: #838484;
@@ -847,9 +848,9 @@ iframe {
   .p-search-form__submit:hover, .p-search-form__submit:active,
   .search-submit:hover, .search-submit:active {
     cursor: pointer;
-  background: #5193BF;
-  color: #fff; }
-  
+    background: #5193BF;
+    color: #fff; }
+    
   .p-sidebar {
   margin-left: 0;
   display: -webkit-box;
