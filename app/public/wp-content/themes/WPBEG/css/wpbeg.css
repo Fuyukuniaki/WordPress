@@ -745,7 +745,7 @@ iframe {
 
 .wp-caption-text {
   margin-top: -20px; }
-
+/*
 .sticky {
   padding: 20px;
   background: #f3f3f3; }
@@ -757,7 +757,7 @@ iframe {
 @media (min-width: 769px) {
   .sticky img {
     max-width: 660px; } }
-
+*/
 .gallery-caption {
   font-size: 13px;
   font-size: 1.3rem; }

@@ -1,9 +1,14 @@
 <?php
     //テーマサポート
-    register_nav_menus();
     add_theme_support( 'title-tag' );
-
-    //タイトル出力
+    function register_my_menus() {
+        register_nav_menus( array(
+          'gmenu' => 'Main Menu',
+          'footer-menu'  => 'Footer Menu',
+        ) );
+      }
+      add_action( 'after_setup_theme', 'register_my_menus' );
+  //タイトル出力
     function wpbeg_title( $title ) {
         if ( is_front_page() && is_home() ) { //トップページなら
             $title = get_bloginfo( 'name', 'display' );
@@ -57,6 +62,13 @@
             'after_widget'  => '</div>',
             'before_title'  => '<h2><i class="fa fa-archive" aria-hidden="true"></i>',
             'after_title'   => "</h2>\n",
+            )
+        );
+        register_sidebar (
+            array(
+                'name'          => '検索ウィジェット',
+                'id'            => 'seachform_widget',
+                'description'   => '検索用ウィジェットです',            
             )
         );
     }
