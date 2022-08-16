@@ -1,0 +1,51 @@
+
+@use "../../global" as *;
+
+.c-text-size {
+    font-size: 16px;
+    &--Logo {
+        font-size: 64px;
+    }
+    &--MainTitle {
+        font-size: 40px;
+    }
+    &--MainCard__Title{
+        font-size: 80px;
+    }
+    &--MainCard__TextTitle {
+        font-size: 24px;
+    }
+    &--MainCard__Text {
+        font-size: 16px;
+    }
+    &--MainMap__Title {
+        font-size: 36px;
+    }
+    &--MainMap__Text {
+        font-size: 16px;
+    }
+    &--NavTitle {
+        font-size: 34px;
+    }
+    &--NavMenu {
+        font-size: 24px;
+    }
+    &--NavMenu__Sub {
+        font-size: 20px;
+    }
+    &--Footer__link {
+        font-size: 20px;
+    }
+    &--Footer__copyright {
+        font-size: 14px;
+    }
+}
+.c-text-weight {
+    font-weight: $textFont_WeightRegular;
+    &__Bold {
+        font-weight: $textFont_WeightBold;
+    }
+    &__Regular {
+        font-weight: $textFont_WeightRegular;
+    }
+}

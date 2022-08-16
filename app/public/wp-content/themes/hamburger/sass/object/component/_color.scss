@@ -1,0 +1,15 @@
+
+@use "../../global" as *;
+
+.c-color {
+    color: $textColor_Gray;
+    &--White {
+        color: $textColor_White;
+    }
+    &--PGray {
+        color: $textColor_PGray;
+    }
+    &--Brown {
+        color: $textColor_Brown;
+    }
+}

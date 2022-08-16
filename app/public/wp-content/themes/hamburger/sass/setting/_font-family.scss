@@ -1,3 +1,4 @@
+@use "../global" as *;
 body {
-    font-family:"Hiragino";
+    font-family: $textFont_English, $textFont_Japanese;
 }

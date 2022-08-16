@@ -1,0 +1,6 @@
+@use "../global" as *;
+
+.l-header {
+    display: block;
+    width: $headerWidth_PC;
+}

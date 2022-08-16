@@ -1,6 +1,7 @@
+@use "setting";
 @use "foundation";
 @use "layout";
-@use "component";
-@use "javascript";
-@use "project";
-@use "utility";
+@use "object/component";
+@use "object/project";
+@use "object/utility";
+@use "status/javascript";

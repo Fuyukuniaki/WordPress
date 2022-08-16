@@ -1,2 +1,28 @@
+body {
+  font-family: "Roboto", "M+ 1m";
+}
 
+.l-header {
+  display: block;
+  width: 100vw;
+}
+
+.l-main {
+  display: flex;
+  width: 100vw;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.p-nav {
+  display: block;
+  position: fixed;
+  top: -217px;
+  right: 0;
+  width: 19vw;
+}
+
+.is-open {
+  background-color: #FFF;
+}
 /*# sourceMappingURL=style.css.map */
