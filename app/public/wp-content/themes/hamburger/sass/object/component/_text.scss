@@ -6,6 +6,12 @@
     &--Logo {
         font-size: 64px;
     }
+    &--Search {
+        font-size: 24px;
+        &__button {
+            font-size: 16px;
+        }
+    }
     &--MainTitle {
         font-size: 40px;
     }
@@ -47,5 +53,53 @@
     }
     &__Regular {
         font-weight: $textFont_WeightRegular;
+    }
+}
+.c-text-text-align {
+    &__Center {
+        text-align: center;
+    }
+    &__Right {
+        text-align: right;
+    }
+}
+.c-text-color {
+    &--Logo {
+        color: $textColor_Gray;
+    }
+    &--MainTitle {
+        color: $textColor_White;
+    }
+    &--MainCard__Title{
+        color: $textColor_PGray;
+    }
+    &--MainCard__TextTitle {
+        color: $textColor_Brown;
+    }
+    &--MainCard__Text {
+        color: $textColor_Brown;
+    }
+    &--MainMap__Title {
+        color: $textColor_Brown;
+    }
+    &--MainMap__Text {
+        color: $textColor_White;
+    }
+    &--NavTitle {
+        color: $textColor_Gray;
+    }
+    &--NavMenu {
+        color: $textColor_Gray;
+    }
+    &--Footer__link {
+        color: $textColor_White;
+    }
+    &--Footer__copyright {
+        color: $textColor_White;
+    }
+}
+.c-text-indent {
+    &__subMenu {
+        text-indent: 16px;
     }
 }

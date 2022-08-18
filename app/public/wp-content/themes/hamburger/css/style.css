@@ -14,11 +14,103 @@ body {
   align-items: center;
 }
 
+.c-background-color {
+  color: #FFFFFF;
+}
+.c-background-color__Header {
+  background-color: #FFF7EF;
+}
+.c-background-color__SideNav {
+  background-color: #F2EDE9;
+}
+.c-background-color__CardText {
+  background-color: rgba(255, 255, 255, 0.3137254902);
+}
+.c-background-color__MapText {
+  background-color: rgba(0, 0, 0, 0.1137254902);
+}
+.c-background-color__MapImg {
+  background-color: #000000;
+}
+.c-background-color__Footer {
+  background-color: #9D8670;
+}
+
+.c-color {
+  color: #707070;
+}
+.c-color--White {
+  color: #FFFFFF;
+}
+.c-color--PGray {
+  color: #EAEAEA;
+}
+.c-color--Brown {
+  color: #3C2A10;
+}
+
+.c-text-size {
+  font-size: 16px;
+}
+.c-text-size--Logo {
+  font-size: 64px;
+}
+.c-text-size--MainTitle {
+  font-size: 40px;
+}
+.c-text-size--MainCard__Title {
+  font-size: 80px;
+}
+.c-text-size--MainCard__TextTitle {
+  font-size: 24px;
+}
+.c-text-size--MainCard__Text {
+  font-size: 16px;
+}
+.c-text-size--MainMap__Title {
+  font-size: 36px;
+}
+.c-text-size--MainMap__Text {
+  font-size: 16px;
+}
+.c-text-size--NavTitle {
+  font-size: 34px;
+}
+.c-text-size--NavMenu {
+  font-size: 24px;
+}
+.c-text-size--NavMenu__Sub {
+  font-size: 20px;
+}
+.c-text-size--Footer__link {
+  font-size: 20px;
+}
+.c-text-size--Footer__copyright {
+  font-size: 14px;
+}
+
+.c-text-weight {
+  font-weight: 400;
+}
+.c-text-weight__Bold {
+  font-weight: 700;
+}
+.c-text-weight__Regular {
+  font-weight: 400;
+}
+
+.c-text-text-align__Center {
+  text-align: center;
+}
+.c-text-text-align__Right {
+  text-align: right;
+}
+
 .p-nav {
   display: block;
   position: fixed;
   top: -217px;
-  right: 0;
+  right: -100%;
   width: 19vw;
 }
 

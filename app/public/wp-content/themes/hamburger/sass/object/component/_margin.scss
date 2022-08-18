@@ -1,0 +1,53 @@
+@use "../../global" as *;
+.c-margin {
+    &--AllZero {
+        margin: 0;
+    }
+    &--Logo {
+        margin: 65px auto auto 67px;
+    }
+    &--search {
+        margin: 86px 31px 85px auto;
+    }
+    &--MainTitle {
+        margin: 235px auto 241px 91px;
+    }
+    &--MainCard {
+        &__title {
+            margin: 47px auto 56px 19px;
+        }
+        &__border {
+            margin: auto auto auto 26.5px;
+        }
+        &__textTitle {
+            margin: 0 auto 20px 0;
+        }
+        &__text {
+            margin: 0;
+        }
+    }
+    &--MainMap__title {
+        margin: 0 54px auto 0;
+    }
+    &--MainMap__border {
+        margin: 65px auto 63px 0;
+    }
+    &--NavTitle {
+        margin: 94px auto 99px 48px;
+    }
+    &--NavMenu {
+        margin: 0 auto 46px 47px;
+    }
+    &--NavSubMenu {
+        margin: 0 auto 61px 0;
+        &__text {
+            margin: 0 auto 31px 0;
+        }
+    }
+    &--Footer__link {
+        margin: 44px auto 0 auto;
+    }
+    &--Footer__copyright {
+        margin: 39px auto 30px auto;
+    }
+}

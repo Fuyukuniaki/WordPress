@@ -1,0 +1,33 @@
+@use "../../global" as *;
+.c-search {
+    display: inline-block;
+    &--Window {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: 1px solid $textColor_Gray;
+        border-radius: 10px;
+        width: 396px;
+        height: 46px;
+        margin: auto 13px auto auto;
+        padding: 0 0 0 11px;
+        &__lupe {
+            background-image: url(/images/icon_lupe.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 24px;
+            height: 24px;
+        }
+    }
+    &--Botton {
+        display: inline-block;
+        border: 1px solid $textColor_Gray;
+        border-radius: 10px;
+        background: linear-gradient($linearGradientS, $linearGradientE);
+        width: 136px;
+        height: 46px;
+        &__text {
+            display: inline-block;
+        }
+    }
+}
