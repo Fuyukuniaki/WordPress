@@ -2,64 +2,64 @@
 @use "../../global" as *;
 
 .c-text-size {
-    font-size: 16px;
+    font-size: 0.83vw;
     &--Logo {
-        font-size: 64px;
+        font-size: 3.3vw;
     }
     &--Search {
-        font-size: 24px;
+        font-size: 1.25vw;
         &__button {
-            font-size: 16px;
+            font-size: 0.83vw;
         }
     }
     &--MainTitle {
-        font-size: 40px;
+        font-size: 2.08vw;
     }
-    &--MainCard__Title{
-        font-size: 80px;
+    &--MainCard__title{
+        font-size: 4.17vw;
     }
-    &--MainCard__TextTitle {
-        font-size: 24px;
+    &--MainCard__textTitle {
+        font-size: 1.25vw;
     }
-    &--MainCard__Text {
-        font-size: 16px;
+    &--MainCard__text {
+        font-size: 0.83vw;
     }
-    &--MainMap__Title {
-        font-size: 36px;
+    &--MainMap__title {
+        font-size: 1.875vw;
     }
-    &--MainMap__Text {
-        font-size: 16px;
+    &--MainMap__text {
+        font-size: 0.83vw;
     }
     &--NavTitle {
-        font-size: 34px;
+        font-size: 1.77vw;
     }
     &--NavMenu {
-        font-size: 24px;
+        font-size: 1.25vw;
     }
     &--NavMenu__Sub {
-        font-size: 20px;
+        font-size: 1.04vw;
     }
     &--Footer__link {
-        font-size: 20px;
+        font-size: 1.04vw;
     }
     &--Footer__copyright {
-        font-size: 14px;
+        font-size: 0.73vw;
     }
 }
 .c-text-weight {
     font-weight: $textFont_WeightRegular;
-    &__Bold {
+    &__bold {
         font-weight: $textFont_WeightBold;
     }
-    &__Regular {
+    &__regular {
         font-weight: $textFont_WeightRegular;
     }
 }
 .c-text-text-align {
-    &__Center {
+    &__center {
         text-align: center;
     }
-    &__Right {
+    &__right {
         text-align: right;
     }
 }
@@ -70,19 +70,19 @@
     &--MainTitle {
         color: $textColor_White;
     }
-    &--MainCard__Title{
+    &--MainCard__title{
         color: $textColor_PGray;
     }
-    &--MainCard__TextTitle {
+    &--MainCard__textTitle {
         color: $textColor_Brown;
     }
-    &--MainCard__Text {
+    &--MainCard__text {
         color: $textColor_Brown;
     }
-    &--MainMap__Title {
+    &--MainMap__title {
         color: $textColor_Brown;
     }
-    &--MainMap__Text {
+    &--MainMap__text {
         color: $textColor_White;
     }
     &--NavTitle {
@@ -100,6 +100,6 @@
 }
 .c-text-indent {
     &__subMenu {
-        text-indent: 16px;
+        text-indent: 0.83vw;
     }
 }

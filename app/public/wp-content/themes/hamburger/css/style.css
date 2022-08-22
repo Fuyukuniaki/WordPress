@@ -1,38 +1,86 @@
-body {
+.g-function--Grid {
+  display: grid;
+}
+.g-function--Grid__frontPage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.g-function--Grid__frontPage .l-header {
+  grid-area: 1/1/2/3;
+}
+.g-function--Grid__frontPage .l-nav {
+  grid-area: 1/3/3/4;
+}
+.g-function--Grid__frontPage .l-main {
+  grid-area: 2/1/3/3;
+}
+.g-function--Grid__frontPage .l-footer {
+  grid-area: 3/1/4/4;
+}
+
+.s-font-family {
   font-family: "Roboto", "M+ 1m";
 }
 
+.s-z-index__9999 {
+  z-index: 9999;
+}
+
 .l-header {
-  display: block;
-  width: 100vw;
+  display: flex;
+  width: 81vw;
+  height: 11.3vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-nav {
+  display: flex;
+  margin: 0 0 auto 0;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .l-main {
   display: flex;
-  width: 100vw;
+  width: 81vw;
   justify-content: flex-start;
   align-items: center;
 }
 
-.c-background-color {
-  color: #FFFFFF;
+.c-background {
+  background-color: #FFFFFF;
 }
-.c-background-color__Header {
+.c-background--Header {
   background-color: #FFF7EF;
 }
-.c-background-color__SideNav {
+.c-background--SideNav {
   background-color: #F2EDE9;
 }
-.c-background-color__CardText {
+.c-background--MainCard__takeout {
+  background: url(/images/bg_takeout.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.c-background--MainCard__eatin {
+  background: url(/images/bg_eatin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.c-background--MainCard__text {
   background-color: rgba(255, 255, 255, 0.3137254902);
 }
-.c-background-color__MapText {
+.c-background--Map__text {
   background-color: rgba(0, 0, 0, 0.1137254902);
 }
-.c-background-color__MapImg {
-  background-color: #000000;
+.c-background--Map__img {
+  background: center/contain no-repeat url(/images/map.png), #000000;
 }
-.c-background-color__Footer {
+.c-background__Footer {
   background-color: #9D8670;
 }
 
@@ -49,68 +97,230 @@ body {
   color: #3C2A10;
 }
 
+.c-margin--AllZero {
+  margin: 0;
+}
+.c-margin--Logo {
+  margin: 3.8vw auto auto 3.5vw;
+}
+.c-margin--search {
+  margin: 4.5vw 1.6vw 4.4vw auto;
+}
+.c-margin--MainTitle {
+  margin: 12.2vw auto 12.5px 4.7vw;
+}
+.c-margin--MainCard__title {
+  margin: 2.4vw auto 2.9vw 0.98vw;
+}
+.c-margin--MainCard__border {
+  margin: auto auto auto 1.4vw;
+}
+.c-margin--MainCard__textTitle {
+  margin: 0 auto 1vw 0;
+}
+.c-margin--MainCard__text {
+  margin: 0;
+}
+.c-margin--MainMap__title {
+  margin: 0 2.8vw auto 0;
+}
+.c-margin--MainMap__border {
+  margin: 3.8vw auto 3.3vw 0;
+}
+.c-margin--NavTitle {
+  margin: 4.89vw auto 5.15vw 2.5vw;
+}
+.c-margin--NavMenu {
+  margin: 0 auto 2.39vw 2.4vw;
+}
+.c-margin--NavSubMenu {
+  margin: 0 auto 3.1vw 0;
+}
+.c-margin--NavSubMenu__text {
+  margin: 0 auto 1.6vw 0;
+}
+.c-margin--Footer__link {
+  margin: 2.3vw auto 0 auto;
+}
+.c-margin--Footer__copyright {
+  margin: 2vw auto 1.5vw auto;
+}
+
+.c-padding--AllZero {
+  padding: 0;
+}
+.c-padding--MainCard {
+  padding: 45px 20px 237px 21px;
+}
+.c-padding--MainCard__base {
+  padding: 121px 112px 237px 111px;
+}
+.c-padding--MainCard__text {
+  padding: 21px 22px 21px 20px;
+}
+.c-padding--MainMap__textBase {
+  padding: 93px 143px 73px 115px;
+}
+
+.c-search {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+}
+.c-search--Window {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  width: 21vw;
+  height: 2.4vw;
+  line-height: 2.4vw;
+  margin: auto 0.7vw auto auto;
+  padding: 0 0 0 0.6vw;
+}
+.c-search--Window__lupe {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-image: url(/images/icon_lupe.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  bottom: 0;
+  left: 0.6vw;
+  margin: auto 0;
+  width: 1.25vw;
+  height: 1.25vw;
+}
+.c-search--Botton {
+  display: inline-block;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  background: linear-gradient(#F2EDE9, #DED8D3);
+  width: 7vw;
+  height: 2.4vw;
+}
+.c-search--Botton__text {
+  display: inline-block;
+}
+
 .c-text-size {
-  font-size: 16px;
+  font-size: 0.83vw;
 }
 .c-text-size--Logo {
-  font-size: 64px;
+  font-size: 3.3vw;
+}
+.c-text-size--Search {
+  font-size: 1.25vw;
+}
+.c-text-size--Search__button {
+  font-size: 0.83vw;
 }
 .c-text-size--MainTitle {
-  font-size: 40px;
+  font-size: 2.08vw;
 }
-.c-text-size--MainCard__Title {
-  font-size: 80px;
+.c-text-size--MainCard__title {
+  font-size: 4.17vw;
 }
-.c-text-size--MainCard__TextTitle {
-  font-size: 24px;
+.c-text-size--MainCard__textTitle {
+  font-size: 1.25vw;
 }
-.c-text-size--MainCard__Text {
-  font-size: 16px;
+.c-text-size--MainCard__text {
+  font-size: 0.83vw;
 }
-.c-text-size--MainMap__Title {
-  font-size: 36px;
+.c-text-size--MainMap__title {
+  font-size: 1.875vw;
 }
-.c-text-size--MainMap__Text {
-  font-size: 16px;
+.c-text-size--MainMap__text {
+  font-size: 0.83vw;
 }
 .c-text-size--NavTitle {
-  font-size: 34px;
+  font-size: 1.77vw;
 }
 .c-text-size--NavMenu {
-  font-size: 24px;
+  font-size: 1.25vw;
 }
 .c-text-size--NavMenu__Sub {
-  font-size: 20px;
+  font-size: 1.04vw;
 }
 .c-text-size--Footer__link {
-  font-size: 20px;
+  font-size: 1.04vw;
 }
 .c-text-size--Footer__copyright {
-  font-size: 14px;
+  font-size: 0.73vw;
 }
 
 .c-text-weight {
   font-weight: 400;
 }
-.c-text-weight__Bold {
+.c-text-weight__bold {
   font-weight: 700;
 }
-.c-text-weight__Regular {
+.c-text-weight__regular {
   font-weight: 400;
 }
 
-.c-text-text-align__Center {
+.c-text-text-align__center {
   text-align: center;
 }
-.c-text-text-align__Right {
+.c-text-text-align__right {
   text-align: right;
 }
 
-.p-nav {
+.c-text-color--Logo {
+  color: #707070;
+}
+.c-text-color--MainTitle {
+  color: #FFFFFF;
+}
+.c-text-color--MainCard__title {
+  color: #EAEAEA;
+}
+.c-text-color--MainCard__textTitle {
+  color: #3C2A10;
+}
+.c-text-color--MainCard__text {
+  color: #3C2A10;
+}
+.c-text-color--MainMap__title {
+  color: #3C2A10;
+}
+.c-text-color--MainMap__text {
+  color: #FFFFFF;
+}
+.c-text-color--NavTitle {
+  color: #707070;
+}
+.c-text-color--NavMenu {
+  color: #707070;
+}
+.c-text-color--Footer__link {
+  color: #FFFFFF;
+}
+.c-text-color--Footer__copyright {
+  color: #FFFFFF;
+}
+
+.c-text-indent__subMenu {
+  text-indent: 0.83vw;
+}
+
+.p-logo {
   display: block;
-  position: fixed;
-  top: -217px;
-  right: -100%;
+  margin: 4.6vw auto 4vw 4vw;
+}
+
+.p-nav--NavMenu {
+  width: 19vw;
+  height: 100%;
+}
+.p-nav--NavMenu__title {
+  width: 19vw;
+}
+.p-nav--NavMenu__subMenu {
   width: 19vw;
 }
 

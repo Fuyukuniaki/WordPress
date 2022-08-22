@@ -24,7 +24,7 @@ $bgColor_Footer   : #9D8670;
 
 $imgOpacity_Map   : 0.6;
 
-$navMenuWidth_SP  : round(367 * 100 / 1920 * 1vw);
-$headerWidth_PC   : 100vw;
+$navMenuWidth_PC  : 19vw;
+$headerWidth_PC   : 100vw - $navMenuWidth_PC ;
 
-$headerHeight_PC  : 217px;
+$headerHeight_PC  : 11.3vw;

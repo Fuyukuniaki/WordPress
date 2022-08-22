@@ -1,9 +1,14 @@
-@use "../../global" as *;
-
+@use "../../global/" as *;
 .p-nav {
-    display: block;
-    position: fixed;
-    top: $headerHeight_PC * -1;
-    right: -100%;
-    width: $navMenuWidth_SP;
+    &--NavMenu {
+        width: $navMenuWidth_PC;
+        height: 100%;
+        
+        &__title {
+            width: $navMenuWidth_PC;
+        }
+        &__subMenu {
+            width: $navMenuWidth_PC;
+        }
+    }
 }

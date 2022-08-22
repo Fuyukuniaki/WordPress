@@ -4,50 +4,50 @@
         margin: 0;
     }
     &--Logo {
-        margin: 65px auto auto 67px;
+        margin: 3.8vw auto auto 3.5vw;
     }
     &--search {
-        margin: 86px 31px 85px auto;
+        margin: 4.5vw 1.6vw 4.4vw auto;
     }
     &--MainTitle {
-        margin: 235px auto 241px 91px;
+        margin: 12.2vw auto 12.5px 4.7vw;
     }
     &--MainCard {
         &__title {
-            margin: 47px auto 56px 19px;
+            margin: 2.4vw auto 2.9vw 0.98vw;
         }
         &__border {
-            margin: auto auto auto 26.5px;
+            margin: auto auto auto 1.4vw;
         }
         &__textTitle {
-            margin: 0 auto 20px 0;
+            margin: 0 auto 1.0vw 0;
         }
         &__text {
             margin: 0;
         }
     }
     &--MainMap__title {
-        margin: 0 54px auto 0;
+        margin: 0 2.8vw auto 0;
     }
     &--MainMap__border {
-        margin: 65px auto 63px 0;
+        margin: 3.8vw auto 3.3vw 0;
     }
     &--NavTitle {
-        margin: 94px auto 99px 48px;
+        margin: 4.89vw auto 5.15vw 2.5vw;
     }
     &--NavMenu {
-        margin: 0 auto 46px 47px;
+        margin: 0 auto 2.39vw 2.4vw;
     }
     &--NavSubMenu {
-        margin: 0 auto 61px 0;
+        margin: 0 auto 3.1vw 0;
         &__text {
-            margin: 0 auto 31px 0;
+            margin: 0 auto 1.6vw 0;
         }
     }
     &--Footer__link {
-        margin: 44px auto 0 auto;
+        margin: 2.3vw auto 0 auto;
     }
     &--Footer__copyright {
-        margin: 39px auto 30px auto;
+        margin: 2vw auto 1.5vw auto;
     }
 }

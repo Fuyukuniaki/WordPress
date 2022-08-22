@@ -2,7 +2,7 @@
 @use "../../global" as *;
 
 .c-background {
-    color: $textColor_White;
+    background-color: $textColor_White;
     &--Header   {
         background-color: $bgColor_Header;
     }
