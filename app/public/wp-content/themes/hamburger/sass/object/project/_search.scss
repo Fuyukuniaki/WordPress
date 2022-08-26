@@ -1,5 +1,5 @@
 @use "../../global" as *;
-.c-search {
+.p-search {
     display: flex;
     position: relative;
     justify-content: flex-end;
@@ -16,6 +16,7 @@
         line-height: 2.4vw;
         margin: auto 0.7vw auto auto;
         padding: 0 0 0 0.6vw;
+        text-indent: 2.4vw;
         &__lupe {
             content: "";
             display: inline-block;
