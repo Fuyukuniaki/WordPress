@@ -11,4 +11,10 @@
         flex-flow: row;
         justify-content: space-between;
     }
+    &--MainMap {
+        width: 100%;
+        height: auto;
+        display: block;
+        aspect-ratio: 1553 / 649;
+    }
 }

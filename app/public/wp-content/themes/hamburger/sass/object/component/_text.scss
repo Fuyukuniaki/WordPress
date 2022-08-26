@@ -15,7 +15,7 @@
     &--MainTitle {
         font-size: 2.08vw;
     }
-    &--MainCard__title{
+    &--MainCard__title {
         font-size: 4.17vw;
     }
     &--MainCard__textTitle {
@@ -80,7 +80,7 @@
         color: $textColor_Brown;
     }
     &--MainMap__title {
-        color: $textColor_Brown;
+        color: $textColor_White;
     }
     &--MainMap__text {
         color: $textColor_White;
@@ -96,6 +96,38 @@
     }
     &--Footer__copyright {
         color: $textColor_White;
+    }
+}
+.c-text-underbar {
+    &--MainCard {
+        &__title {
+            display: inline-block;
+            &::after {
+                display: block;
+                content: "";
+                width: 2.91vw;
+                height: 3.28vw;
+                border-bottom: 0.21vw solid $textColor_PGray;
+            }
+        }
+    }
+    &--MainMap {
+        &__title {
+            display: inline-block;
+            &::after {
+                display: block;
+                content: "";
+                width: 3.9vw;
+                height: 2.92vw;
+                border-bottom: 0.104vw solid $textColor_White;
+                margin-bottom: 3.33vw;
+            }
+        }
+    }
+}
+.c-text-line-height{
+    &--MainMap__text {
+        line-height: 2em;
     }
 }
 .c-text-indent {

@@ -6,6 +6,10 @@
   z-index: 9999;
 }
 
+ul {
+  list-style: none;
+}
+
 .l-header {
   display: flex;
   width: 81vw;
@@ -28,6 +32,15 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-flow: column wrap;
+}
+
+.l-footer {
+  display: flex;
+  flex-flow: column wrap;
+}
+.l-footer--Link {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .c-background {
@@ -55,13 +68,13 @@
   background-repeat: no-repeat;
 }
 .c-background--MainCard__text {
-  background-color: rgba(255, 255, 255, 0.3137254902);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .c-background--Map__text {
-  background-color: rgba(0, 0, 0, 0.1137254902);
+  background-color: rgba(0, 0, 0, 0.2901960784);
 }
 .c-background--Map__img {
-  background: center/contain no-repeat url(/images/map.png), #000000;
+  background: center/cover no-repeat url(/images/map.png), #000000;
 }
 .c-background__Footer {
   background-color: #9D8670;
@@ -129,7 +142,7 @@
   margin: 0 auto 1vw 0;
 }
 .c-margin--MainCard__text {
-  margin: 0;
+  margin: 0 0 1.04vw 0;
 }
 .c-margin--MainMap__title {
   margin: 0 2.8vw auto 0;
@@ -163,7 +176,7 @@
   padding: 0;
 }
 .c-padding--MainCard {
-  padding: 2.34vw 1.042vw 12.34vw 1.1vw;
+  padding: 2.34vw 1.042vw 0 1.1vw;
 }
 .c-padding--MainCard__base {
   padding: 6.3vw 5.83vw 12.34vw 5.78vw;
@@ -254,7 +267,7 @@
   color: #3C2A10;
 }
 .c-text-color--MainMap__title {
-  color: #3C2A10;
+  color: #FFFFFF;
 }
 .c-text-color--MainMap__text {
   color: #FFFFFF;
@@ -270,6 +283,32 @@
 }
 .c-text-color--Footer__copyright {
   color: #FFFFFF;
+}
+
+.c-text-underbar--MainCard__title {
+  display: inline-block;
+}
+.c-text-underbar--MainCard__title::after {
+  display: block;
+  content: "";
+  width: 2.91vw;
+  height: 3.28vw;
+  border-bottom: 0.21vw solid #EAEAEA;
+}
+.c-text-underbar--MainMap__title {
+  display: inline-block;
+}
+.c-text-underbar--MainMap__title::after {
+  display: block;
+  content: "";
+  width: 3.9vw;
+  height: 2.92vw;
+  border-bottom: 0.104vw solid #FFFFFF;
+  margin-bottom: 3.33vw;
+}
+
+.c-text-line-height--MainMap__text {
+  line-height: 2em;
 }
 
 .c-text-indent__subMenu {
@@ -339,6 +378,16 @@
 
 .p-articles--MainCard {
   width: 33vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  aspect-ratio: 625/1193;
+}
+.p-articles--MainMap {
+  width: 49.5vw;
+  height: 100%;
+  display: block;
+  aspect-ratio: 950/649;
 }
 
 .p-section--PageTitle {
@@ -351,6 +400,12 @@
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+}
+.p-section--MainMap {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1553/649;
 }
 
 .is-open {

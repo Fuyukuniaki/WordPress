@@ -34,7 +34,7 @@
             background-color: $bgColor_MapText;
         }
         &__img   {
-            background: center / contain no-repeat url(/images/map.png), $bgColor_MapImg;
+            background: center / cover no-repeat url(/images/map.png), $bgColor_MapImg;
         }
     }
     &__Footer   {
