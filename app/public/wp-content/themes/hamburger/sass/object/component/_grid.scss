@@ -1,0 +1,27 @@
+@use "../../global" as *;
+
+.c-function--Grid {
+    &__frontPage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: fit-content($headerHeight_PC) fit-content(100%) fit-content($footerHeight_PC);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        > .l-header {
+            grid-area: 1 / 1 / 2 / 2;
+            align-self: start;
+        }
+        > .l-nav {
+            grid-area: 1 / 2 / 3 / 3;
+            align-self: start;
+        }
+        > .l-main {
+            grid-area: 2 / 1 / 3 / 2;
+            align-self: start;
+        }
+        > .l-footer {
+            grid-area: 3 / 1 / 4 / 3;
+            align-self: start;
+        }
+    }
+}

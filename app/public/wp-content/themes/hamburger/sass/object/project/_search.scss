@@ -1,0 +1,46 @@
+@use "../../global" as *;
+.p-search {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    &--Window {
+        display: inline-block;
+        position: relative;
+        align-items: center;
+        justify-content: flex-start;
+        border: 1px solid $textColor_Gray;
+        border-radius: 10px;
+        width: 21vw;
+        height: 2.4vw;
+        line-height: 2.4vw;
+        margin: auto 0.7vw auto auto;
+        padding: 0 0 0 0.6vw;
+        text-indent: 2.4vw;
+        &__lupe {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            background-image: url(/images/icon_lupe.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: 0;
+            bottom: 0;
+            left: 0.6vw;
+            margin: auto 0;
+            width: 1.25vw;
+            height: 1.25vw;
+        }
+    }
+    &--Botton {
+        display: inline-block;
+        border: 1px solid $textColor_Gray;
+        border-radius: 10px;
+        background: linear-gradient($linearGradientS, $linearGradientE);
+        width: 7vw;
+        height: 2.4vw;
+        &__text {
+            display: inline-block;
+        }
+    }
+}

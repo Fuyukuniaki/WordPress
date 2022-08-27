@@ -1,0 +1,20 @@
+@use "../../global" as *;
+.p-section {
+    &--PageTitle {
+        display: block;
+        width: $headerWidth_PC;
+        height: 27.6vw;
+    }
+    &--MainCard {
+        width: 69.375vw;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    &--MainMap {
+        width: 100%;
+        height: auto;
+        display: block;
+        aspect-ratio: 1553 / 649;
+    }
+}

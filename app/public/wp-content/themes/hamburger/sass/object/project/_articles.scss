@@ -1,0 +1,16 @@
+@use "../../global" as *;
+.p-articles{
+    &--MainCard {
+        width: 33vw;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        aspect-ratio: 625 / 1193;
+    }
+    &--MainMap {
+        width: 49.5vw;
+        height: 100%;
+        display: block;
+        aspect-ratio: 950 / 649;
+    }
+}

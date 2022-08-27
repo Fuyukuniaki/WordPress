@@ -1,0 +1,18 @@
+@use "../../global" as *;
+.c-padding {
+    &--AllZero {
+        padding: 0;
+    }
+    &--MainCard {
+        padding: 2.34vw 1.042vw 0 1.1vw;
+        &__base {
+            padding: 6.30vw 5.83vw 12.34vw 5.78vw;
+        }
+        &__text {
+            padding: 1.09vw 1.15vw 1.09vw 1.042vw;
+        }
+    }
+    &--MainMap__textBase {
+        padding: 4.84vw 7.45vw 3.80vw 5.99vw;
+    }
+}

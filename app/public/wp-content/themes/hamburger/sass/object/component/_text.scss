@@ -1,0 +1,152 @@
+
+@use "../../global" as *;
+
+.c-text-size {
+    font-size: 0.83vw;
+    &--Logo {
+        font-size: 3.3vw;
+    }
+    &--Search {
+        font-size: 1.25vw;
+        &__button {
+            font-size: 0.83vw;
+        }
+    }
+    &--MainTitle {
+        font-size: 2.08vw;
+    }
+    &--MainCard__title {
+        font-size: 4.17vw;
+    }
+    &--MainCard__textTitle {
+        font-size: 1.25vw;
+    }
+    &--MainCard__text {
+        font-size: 0.83vw;
+    }
+    &--MainMap__title {
+        font-size: 1.875vw;
+    }
+    &--MainMap__text {
+        font-size: 0.83vw;
+    }
+    &--NavTitle {
+        font-size: 1.77vw;
+    }
+    &--NavMenu {
+        font-size: 1.25vw;
+    }
+    &--NavMenu__sub {
+        font-size: 1.04vw;
+    }
+    &--Footer__link {
+        font-size: 1.04vw;
+    }
+    &--Footer__copyright {
+        font-size: 0.73vw;
+    }
+}
+.c-text-weight {
+    font-weight: $textFont_WeightRegular;
+    &__bold {
+        font-weight: $textFont_WeightBold;
+    }
+    &__regular {
+        font-weight: $textFont_WeightRegular;
+    }
+}
+.c-text-text-align {
+    &__center {
+        text-align: center;
+    }
+    &__right {
+        text-align: right;
+    }
+}
+.c-text-color {
+    &--Logo {
+        color: $textColor_Gray;
+    }
+    &--MainTitle {
+        color: $textColor_White;
+    }
+    &--MainCard__title {
+        color: $textColor_PGray;
+    }
+    &--MainCard__textTitle {
+        color: $textColor_Brown;
+    }
+    &--MainCard__text {
+        color: $textColor_Brown;
+    }
+    &--MainMap__title {
+        color: $textColor_White;
+    }
+    &--MainMap__text {
+        color: $textColor_White;
+    }
+    &--NavTitle {
+        color: $textColor_Gray;
+    }
+    &--NavMenu {
+        color: $textColor_Gray;
+    }
+    &--Footer__link {
+        color: $textColor_White;
+    }
+    &--Footer__copyright {
+        color: $textColor_White;
+    }
+}
+.c-text-border {
+    &--MainCard {
+        &__title {
+            display: inline-block;
+            &::after {
+                display: block;
+                content: "";
+                width: 2.91vw;
+                height: 3.28vw;
+                border-bottom: 0.21vw solid $textColor_PGray;
+            }
+        }
+    }
+    &--MainMap {
+        &__title {
+            display: inline-block;
+            &::after {
+                display: block;
+                content: "";
+                width: 3.9vw;
+                height: 2.92vw;
+                border-bottom: 0.104vw solid $textColor_White;
+                margin-bottom: 3.33vw;
+            }
+        }
+    }
+}
+.c-text-line-height{
+    &--MainMap__text {
+        line-height: 2em;
+    }
+}
+.c-text-indent {
+    &__subMenu {
+        text-indent: 0.83vw;
+    }
+}
+.c-text-separate {
+    &--Footer {
+        &__list {
+            &::after {
+                content:"|";
+                display: inline;
+            }
+        }
+    }
+}
+.c-text-decoration {
+    &--None {
+        text-decoration: none;
+    }
+}

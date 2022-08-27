@@ -1,0 +1,15 @@
+@use "../../global/" as *;
+.p-nav {
+    &--NavMenu {
+        width: $navMenuWidth_PC;
+        height: 100%;
+        
+        &__title {
+            width: $navMenuWidth_PC;
+        }
+        &__subMenu {
+            width: $navMenuWidth_PC;
+            max-height: 100%;
+        }
+    }
+}

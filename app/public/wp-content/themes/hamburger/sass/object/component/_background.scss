@@ -1,0 +1,43 @@
+
+@use "../../global" as *;
+
+.c-background {
+    background-color: $textColor_White;
+    &--Header   {
+        background-color: $bgColor_Header;
+    }
+    &--SideNav  {
+        background-color: $bgColor_SideNav;
+    }
+    &--MainTitle {
+        background: url(/images/bg_frontpage_main.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &--MainCard {
+        &__takeout {
+            background: url(/images/bg_takeout.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__eatin {
+            background: url(/images/bg_eatin.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__text {
+            background-color: $bgColor_CardText;
+        }
+    }
+    &--Map {
+        &__text  {
+            background-color: $bgColor_MapText;
+        }
+        &__img   {
+            background: center / cover no-repeat url(/images/map.png), $bgColor_MapImg;
+        }
+    }
+    &__Footer   {
+        background-color: $bgColor_Footer;
+    }
+}

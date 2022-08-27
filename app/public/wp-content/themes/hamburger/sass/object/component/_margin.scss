@@ -1,0 +1,57 @@
+@use "../../global" as *;
+.c-margin {
+    &--AllZero {
+        margin: 0;
+    }
+    &--Logo {
+        margin: 3.8vw auto auto 3.5vw;
+    }
+    &--search {
+        margin: 4.5vw 1.6vw 4.4vw auto;
+    }
+    &--MainTitle {
+        margin: 12.2vw auto 12.5px 4.7vw;
+    }
+    &--MainCard {
+            margin: 6.1vw auto 7vw auto;
+        &__title {
+            margin: 2.4vw auto 2.9vw 0.98vw;
+        }
+        &__border {
+            margin: auto auto auto 1.4vw;
+        }
+        &__textTitle {
+            margin: 0 auto 1.0vw 0;
+        }
+        &__text {
+            margin: 0 0 1.04vw 0;
+        }
+    }
+    &--MainMap__title {
+        margin: 0 2.8vw auto 0;
+    }
+    &--MainMap__border {
+        margin: 3.8vw auto 3.3vw 0;
+    }
+    &--NavTitle {
+        margin: 4.89vw auto 5.15vw 2.5vw;
+    }
+    &--NavMenu {
+        margin: 0 auto 2.39vw 2.4vw;
+    }
+    &--NavSubMenu {
+        margin: 0 auto 3.1vw 0;
+        &__title {
+            margin: 0 auto 2.083vw 0;
+        }
+        &__text {
+            margin: 0 auto 1.6vw 0;
+        }
+    }
+    &--Footer__link {
+        margin: 2.3vw auto 0 auto;
+    }
+    &--Footer__copyright {
+        margin: 2vw auto 1.5vw auto;
+    }
+}

@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+.l-main {
+    display: flex;
+    width: $headerWidth_PC;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column wrap;
+}

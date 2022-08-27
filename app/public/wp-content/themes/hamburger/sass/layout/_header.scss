@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+.l-header {
+    display: flex;
+    width: $headerWidth_PC;
+    height: $headerHeight_PC;
+    justify-content: space-between;
+    align-items: center;
+}

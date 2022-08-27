@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+.l-nav {
+    display: flex;
+    margin:  0 0 auto 0 ;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

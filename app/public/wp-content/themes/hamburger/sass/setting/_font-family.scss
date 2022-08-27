@@ -1,0 +1,4 @@
+@use "../global" as *;
+.s-font-family {
+    font-family: $textFont_English, $textFont_Japanese;
+}
