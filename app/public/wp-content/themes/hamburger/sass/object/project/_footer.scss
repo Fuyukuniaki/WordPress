@@ -1,0 +1,20 @@
+@use "../../global" as *;
+.p-footer {
+    display: flex;
+    flex-flow: column wrap;
+    &--Link {
+        display: flex;
+        flex-flow: row nowrap;
+        &__text {
+            display: inline;
+            &::after {
+                content:"|";
+                margin: 0 0.7em;
+                display: inline;
+            }
+            &:last-of-type::after {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,9 +1,4 @@
 @use "../global" as *;
 .l-footer {
-    display: flex;
-    flex-flow: column wrap;
-    &--Link {
-        display: flex;
-        flex-flow: row nowrap;
-    }
+    display: block;
 }

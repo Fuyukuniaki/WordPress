@@ -98,7 +98,7 @@
         color: $textColor_White;
     }
 }
-.c-text-underbar {
+.c-text-border {
     &--MainCard {
         &__title {
             display: inline-block;
@@ -133,5 +133,20 @@
 .c-text-indent {
     &__subMenu {
         text-indent: 0.83vw;
+    }
+}
+.c-text-separate {
+    &--Footer {
+        &__list {
+            &::after {
+                content:"|";
+                display: inline;
+            }
+        }
+    }
+}
+.c-text-decoration {
+    &--None {
+        text-decoration: none;
     }
 }

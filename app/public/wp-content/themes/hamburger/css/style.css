@@ -6,8 +6,13 @@
   z-index: 9999;
 }
 
-ul {
+ul, ol, dl, li, dt, dd {
   list-style: none;
+}
+
+a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :target {
+  color: inherit;
+  text-decoration: none;
 }
 
 .l-header {
@@ -21,7 +26,7 @@ ul {
 .l-nav {
   display: flex;
   margin: 0 0 auto 0;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -35,12 +40,7 @@ ul {
 }
 
 .l-footer {
-  display: flex;
-  flex-flow: column wrap;
-}
-.l-footer--Link {
-  display: flex;
-  flex-flow: row nowrap;
+  display: block;
 }
 
 .c-background {
@@ -96,7 +96,7 @@ ul {
 .c-function--Grid__frontPage {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: fit-content(11.3vw) 1fr 1fr;
+  grid-template-rows: fit-content(11.3vw) fit-content(100%) fit-content(7.8125vw);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -285,20 +285,20 @@ ul {
   color: #FFFFFF;
 }
 
-.c-text-underbar--MainCard__title {
+.c-text-border--MainCard__title {
   display: inline-block;
 }
-.c-text-underbar--MainCard__title::after {
+.c-text-border--MainCard__title::after {
   display: block;
   content: "";
   width: 2.91vw;
   height: 3.28vw;
   border-bottom: 0.21vw solid #EAEAEA;
 }
-.c-text-underbar--MainMap__title {
+.c-text-border--MainMap__title {
   display: inline-block;
 }
-.c-text-underbar--MainMap__title::after {
+.c-text-border--MainMap__title::after {
   display: block;
   content: "";
   width: 3.9vw;
@@ -313,6 +313,15 @@ ul {
 
 .c-text-indent__subMenu {
   text-indent: 0.83vw;
+}
+
+.c-text-separate--Footer__list::after {
+  content: "|";
+  display: inline;
+}
+
+.c-text-decoration--None {
+  text-decoration: none;
 }
 
 .p-logo {
@@ -374,6 +383,7 @@ ul {
 }
 .p-nav--NavMenu__subMenu {
   width: 19vw;
+  max-height: 100%;
 }
 
 .p-articles--MainCard {
@@ -406,6 +416,26 @@ ul {
   height: auto;
   display: block;
   aspect-ratio: 1553/649;
+}
+
+.p-footer {
+  display: flex;
+  flex-flow: column wrap;
+}
+.p-footer--Link {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.p-footer--Link__text {
+  display: inline;
+}
+.p-footer--Link__text::after {
+  content: "|";
+  margin: 0 0.7em;
+  display: inline;
+}
+.p-footer--Link__text:last-of-type::after {
+  display: none;
 }
 
 .is-open {
