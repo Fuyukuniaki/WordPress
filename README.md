@@ -1,2 +1,2 @@
-# wordpress
- RaiseTech
+# WordPress
+for RaiseTech
